@@ -10,12 +10,12 @@
 /* Main website CSS */
 /* Headings */
 .subheading{
-    @apply  text-transparent bg-gradient-to-r from-secondary via-tertiary to-primary-300 bg-clip-text text-4xl sm:text-5xl lg:text-6xl font-poppins font-bold
+    @apply  text-transparent bg-gradient-to-r from-secondary via-tertiary to-primary-300 bg-clip-text text-4xl sm:text-5xl lg:text-6xl font-poppins font-bold !leading-normal
 }
 
 /* Links and Paragraphs */
 .menu-link{ 
-    @apply  lg:text-lg xl:text-xl inline-block py-2
+    @apply  lg:text-lg inline-block py-2
 }
 .para{
     @apply lg:text-lg font-poppins text-slate-400
@@ -30,4 +30,12 @@
 }
 .btn-sm-light{
     @apply px-7 py-2 bg-primary-100/70 rounded-full font-medium md:text-xl lg:text-lg md:py-2.5
+}
+
+/* Custom styling */
+.side-spacing{
+    @apply lg:px-16 xl:px-20 2xl:px-28;
+}
+.issue-card{
+    @apply mx-auto block h-60 w-60 object-cover
 }

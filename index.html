@@ -18,11 +18,11 @@
 
 <body>
   <!-- ========== Navigation Bar ========== -->
-  <nav class="container mx-auto flex items-center justify-between px-6 py-3 md:py-6 lg:py-6">
+  <nav class="container side-spacing mx-auto flex items-center justify-between px-6 py-3 md:py-6 lg:py-2">
     <!-- Logo -->
     <div>
       <a href="/">
-        <img src="src/images/logo.svg" alt="" class="w-28 object-cover lg:w-32 xl:w-36" />
+        <img src="src/images/logo.svg" alt="" class="w-28 object-cover lg:w-24 xl:w-28" />
       </a>
     </div>
 
@@ -115,16 +115,16 @@
   </nav>
 
   <!-- ========== Header Bar ========== -->
-  <header class="container mx-auto flex flex-col items-center rounded-3xl bg-primary-100/40 py-16 lg:flex-row lg:py-28">
-    <div class="order-2 lg:order-1 lg:w-1/2">
+  <header class="container mx-auto flex flex-col items-center rounded-3xl bg-primary-100/40 py-16 lg:flex-row lg:py-14">
+    <div class="order-2 lg:order-1 lg:w-2/5">
       <img src="src/images/header/landing.svg" alt=""
-        class="-mb-36 w-4/5 object-cover md:w-3/4 lg:-mb-48 lg:w-full 2xl:w-4/5" />
+        class="w-4/5 object-cover md:w-3/4 xl:w-[400px] 2xl:w-4/5" />
     </div>
 
-    <div class="order-1 mb-6 px-6 sm:px-14 md:mb-8 lg:order-2 lg:mb-0 lg:w-1/2 lg:px-10">
-      <hgroup class="mb-3 md:mb-6 lg:mb-8">
+    <div class="order-1 mb-6 px-6 sm:px-14 md:mb-6 lg:order-2 lg:mb-0 lg:w-3/5 lg:px-10 lg:pr-[160px]">
+      <hgroup class="mb-3 md:mb-6">
         <h1
-          class="mb-2 bg-gradient-to-r from-secondary via-tertiary to-primary-300 bg-clip-text font-poppins text-6xl font-extrabold text-transparent md:text-7xl lg:text-8xl">
+          class="mb-2 bg-gradient-to-r from-secondary via-tertiary to-primary-300 bg-clip-text font-poppins text-6xl font-extrabold text-transparent md:text-7xl">
           Peacify
         </h1>
         <h2 class="font-poppins text-2xl md:text-3xl lg:text-4xl">
@@ -132,7 +132,7 @@
         </h2>
       </hgroup>
 
-      <p class="mb-8 font-poppins text-sm md:mb-10 md:text-base lg:text-lg">
+      <p class="mb-8 font-poppins text-sm md:mb-10 md:text-base text-justify">
         We fuse the powers of self-nurturing, expert guidance, and social
         connectivity to offer you a mental health care experience that is
         second to none. Tailoring our approach to your needs ensures you
@@ -145,16 +145,18 @@
   </header>
 
   <!-- ========== Why Choose Us ========== -->
-  <section class="container mx-auto overflow-x-hidden overflow-y-visible px-4 pb-24 pt-32">
-    <hgroup class="mb-8 text-center lg:mb-12">
+  <section class="container side-spacing mx-auto overflow-x-hidden overflow-y-visible px-4 pb-24 pt-32">
+    <hgroup class="mb-8 text-right lg:mb-12">
       <h2 class="subheading">Why Choose Us?</h2>
-      <p class="para">
-        Our platform is built by psychiatrists, psychologists and mental
-        health experts with immense global experience.
-      </p>
+      <div class="flex justify-end">
+        <p class="para lg:w-[720px]">
+          Our platform is built by psychiatrists, psychologists and mental
+          health experts with immense global experience.
+        </p>
+    </div>
     </hgroup>
 
-    <div class="mx-auto flex flex-col justify-between lg:flex-row lg:items-center 2xl:w-4/5">
+    <div class="mx-auto flex flex-col justify-between lg:flex-row lg:items-center 2xl:w-4/5 ">
       <div class="order-2 box-border p-6 sm:mx-auto sm:w-4/5 lg:order-1 lg:w-2/5">
         <div class="relative mx-auto grid grid-cols-2 gap-3 sm:gap-5">
           <div class="grid gap-3">
@@ -162,8 +164,8 @@
             <img src="src/images/home/why-sm-1.png" alt="" class="w-full object-cover" />
           </div>
           <div class="grid gap-3">
-            <img src="src/images/home/why-lg-2.png" alt="" class="w-full object-cover" />
             <img src="src/images/home/why-sm-2.png" alt="" class="w-full object-cover" />
+            <img src="src/images/home/why-lg-2.png" alt="" class="w-full object-cover" />
           </div>
           <!-- Leaves -->
           <img src="src/images/home/leaf-1.svg" alt=""
@@ -174,7 +176,7 @@
       </div>
 
       <article class="order-1 mx-auto sm:w-[580px] lg:order-2 lg:w-3/5">
-        <div class="mx-auto mb-8 space-y-3 lg:mb-0 lg:w-4/5">
+        <div class="mx-auto mb-8 space-y-3 lg:mb-0 lg:w-4/5 lg:mr-0">
           <figure
             class="flex flex-col rounded-xl rounded-br-[5rem] border-2 border-slate-200 bg-white p-5 shadow-md xs:flex-row lg:items-center lg:py-3 xl:py-6">
             <div class="mr-4 w-24 xs:w-1/5 lg:w-[15%] xl:w-1/5">
@@ -230,7 +232,7 @@
 
   <!-- ========== Issues ========== -->
   <section>
-    <div class="container mx-auto mb-8 px-6">
+    <div class="container side-spacing mx-auto mb-8 px-6">
       <h2 class="subheading">Facing Any Issue?</h2>
       <p class="para">
         Discover engaging mental health resources, including articles, videos,
@@ -240,36 +242,31 @@
     </div>
 
     <!-- Issues -->
-    <div class="bg-primary-100/20 pb-20">
+    <div class="bg-primary-100/40 pb-20">
       <div
-        class="container mx-auto grid gap-4 px-4 py-6 pt-8 sm:grid-cols-2 lg:grid-cols-3 lg:py-12 xl:gap-10 xl:py-16 2xl:gap-16">
-        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
-          <img src="src/images/issues/stress.png" alt="" class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+        class="container side-spacing mx-auto grid gap-4 px-4 py-6 pt-8 sm:grid-cols-2 lg:grid-cols-3 lg:py-12 xl:gap-10 xl:py-16 2xl:gap-16">
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6 hover:bg-primary-300">
+          <img src="src/images/issues/stress.png" alt="" class="issue-card" />
           <h4 class="text-center text-3xl font-semibold">Stress</h4>
         </div>
-        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
-          <img src="src/images/issues/confusion.png" alt=""
-            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6  hover:bg-primary-300">
+          <img src="src/images/issues/confusion.png" alt="" class="issue-card" />
           <h4 class="text-center text-3xl font-semibold">Confusion</h4>
         </div>
-        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
-          <img src="src/images/issues/anxiety.png" alt=""
-            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6 hover:bg-primary-300">
+          <img src="src/images/issues/anxiety.png" alt="" class="issue-card" />
           <h4 class="text-center text-3xl font-semibold">Anxiety</h4>
         </div>
-        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
-          <img src="src/images/issues/depression.png" alt=""
-            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6 hover:bg-primary-300">
+          <img src="src/images/issues/depression.png" alt=""  class="issue-card" />
           <h4 class="text-center text-3xl font-semibold">Depression</h4>
         </div>
-        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
-          <img src="src/images/issues/hyper-tension.png" alt=""
-            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6 hover:bg-primary-300">
+          <img src="src/images/issues/hyper-tension.png" alt=""  class="issue-card" />
           <h4 class="text-center text-3xl font-semibold">Hypertension</h4>
         </div>
-        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
-          <img src="src/images/issues/bio-polar-disorder.png" alt=""
-            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6 hover:bg-primary-300">
+          <img src="src/images/issues/bio-polar-disorder.png" alt=""  class="issue-card"/>
           <h4 class="text-center text-3xl font-semibold">
             Biopolar Disorder
           </h4>
@@ -282,7 +279,7 @@
   </section>
 
   <!-- ========== Disorders ========== -->
-  <section class="container mx-auto px-4 py-20 2xl:py-28">
+  <section class="container side-spacing mx-auto px-4 py-20 2xl:py-28">
     <div class="mb-12">
       <h2 class="mx-auto mb-4 text-center font-poppins text-2xl font-bold sm:text-4xl md:text-5xl 2xl:w-4/5">
         <span class="text-primary-300">Peacify</span> mental health experts
@@ -396,7 +393,7 @@
 
   <!-- ========== Our Testimonial ========== -->
   <section class="bg-gradient-to-br from-primary-100/40 to-primary-100/5 py-10">
-    <div class="container mx-auto px-4 md:flex md:items-start md:gap-4 lg:py-10">
+    <div class="container side-spacing mx-auto px-4 md:flex md:items-start md:gap-4 lg:py-10">
       <div class="md:order-2 md:w-3/5">
         <h2 class="subheading mb-6 text-center md:text-left">
           Our Testimonials
@@ -586,7 +583,7 @@
 
   <!-- ========== Footer ========== -->
   <footer class="bg-primary-200 p-6 border-b-[1px] border-slate-100">
-    <div class="container mx-auto space-y-6 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4">
+    <div class="container side-spacing mx-auto space-y-6 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4">
       <div class="sm:p-4">
         <p class="text-md leading-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis
           voluptates culpa perspiciatis nesciunt laudantium! Fuga molestiae exercitationem in eius totam deserunt

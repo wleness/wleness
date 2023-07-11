@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Admin CSS */
+.sidebar-active{
+    @apply  text-primary-400 border-r-4 border-primary-300
+}
+
+/* Main website CSS */
+/* Headings */
+.subheading{
+    @apply  text-transparent bg-gradient-to-r from-secondary via-tertiary to-primary-300 bg-clip-text text-4xl sm:text-5xl lg:text-6xl font-poppins font-bold
+}
+
+/* Links and Paragraphs */
+.menu-link{ 
+    @apply  lg:text-lg xl:text-xl inline-block py-2
+}
+.para{
+    @apply lg:text-lg font-poppins text-slate-400
+}
+
+/* Buttons */
+.btn-sm{
+    @apply px-6 py-2 bg-primary-500 rounded-full text-white hover:bg-primary-300 transition-all
+}
+.btn-lg{
+    @apply px-10 py-3 bg-primary-500 rounded-full text-white md:text-lg hover:bg-primary-300 transition-all
+}
+.btn-sm-light{
+    @apply px-7 py-2 bg-primary-100/70 rounded-full font-medium md:text-xl lg:text-lg md:py-2.5
+}

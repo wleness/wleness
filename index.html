@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peacify Landing Page</title>
+  <link rel="stylesheet" href="src/css/input.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- ========== Navigation Bar ========== -->
+  <nav class="container mx-auto flex items-center justify-between px-6 py-3 md:py-6 lg:py-6">
+    <!-- Logo -->
+    <div>
+      <a href="/">
+        <img src="src/images/logo.svg" alt="" class="w-28 object-cover lg:w-32 xl:w-36" />
+      </a>
+    </div>
+
+    <div class="flex items-center">
+      <!-- Menu list -->
+      <ul class="mr-8 hidden justify-end space-x-6 xl:flex">
+        <li><a href="#" class="menu-link">About</a></li>
+        <li class="group relative inline-block">
+          <a href="#" class="menu-link">Services <i class="fa-solid fa-angle-down"></i></a>
+
+          <!-- Submenu -->
+          <ul
+            class="absolute hidden w-60 rounded-xl border-[1px] border-slate-100 bg-white px-6 py-4 shadow-md group-hover:block">
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Therapy</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Psychiatry</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Couples Therapy</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Self-Care</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Community</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="experts.html" class="menu-link">Experts</a></li>
+        <li class="group relative inline-block">
+          <a href="issues.html" class="menu-link">Issues <i class="fa-solid fa-angle-down"></i></a>
+
+          <!-- Submenu -->
+          <ul
+            class="absolute hidden w-60 rounded-xl border-[1px] border-slate-100 bg-white px-6 py-4 shadow-md group-hover:block">
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Depression</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Anxiety</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Adult ADHD</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Stress</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Feeling Low</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="internship.html" class="menu-link">Internship</a></li>
+        <li class="group relative inline-block">
+          <a href="#" class="menu-link">Exercises <i class="fa-solid fa-angle-down"></i></a>
+
+          <!-- Submenu -->
+          <ul
+            class="absolute hidden w-60 rounded-xl border-[1px] border-slate-100 bg-white px-6 py-4 shadow-md group-hover:block">
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Yoga</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Meditation</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Goal Plan</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Sadhna</a>
+            </li>
+            <li>
+              <a href="#" class="menu-link inline-block py-2">Brain Exercise</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="menu-link">Blogs</a></li>
+      </ul>
+
+      <!-- Authentication -->
+      <button class="btn-lg hidden lg:mr-4 lg:inline-block">Sign Up</button>
+
+      <!-- Hamburger Icon -->
+      <button class="xl:hidden">
+        <i class="fa-solid fa-bars text-4xl"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Header Bar ========== -->
+  <header class="container mx-auto flex flex-col items-center rounded-3xl bg-primary-100/40 py-16 lg:flex-row lg:py-28">
+    <div class="order-2 lg:order-1 lg:w-1/2">
+      <img src="src/images/header/landing.svg" alt=""
+        class="-mb-36 w-4/5 object-cover md:w-3/4 lg:-mb-48 lg:w-full 2xl:w-4/5" />
+    </div>
+
+    <div class="order-1 mb-6 px-6 sm:px-14 md:mb-8 lg:order-2 lg:mb-0 lg:w-1/2 lg:px-10">
+      <hgroup class="mb-3 md:mb-6 lg:mb-8">
+        <h1
+          class="mb-2 bg-gradient-to-r from-secondary via-tertiary to-primary-300 bg-clip-text font-poppins text-6xl font-extrabold text-transparent md:text-7xl lg:text-8xl">
+          Peacify
+        </h1>
+        <h2 class="font-poppins text-2xl md:text-3xl lg:text-4xl">
+          Humans for human
+        </h2>
+      </hgroup>
+
+      <p class="mb-8 font-poppins text-sm md:mb-10 md:text-base lg:text-lg">
+        We fuse the powers of self-nurturing, expert guidance, and social
+        connectivity to offer you a mental health care experience that is
+        second to none. Tailoring our approach to your needs ensures you
+        receive the finest care to enhance your well-being and elevate your
+        life.
+      </p>
+
+      <button class="btn-lg">Schedule an appointment</button>
+    </div>
+  </header>
+
+  <!-- ========== Why Choose Us ========== -->
+  <section class="container mx-auto overflow-x-hidden overflow-y-visible px-4 pb-24 pt-32">
+    <hgroup class="mb-8 text-center lg:mb-12">
+      <h2 class="subheading">Why Choose Us?</h2>
+      <p class="para">
+        Our platform is built by psychiatrists, psychologists and mental
+        health experts with immense global experience.
+      </p>
+    </hgroup>
+
+    <div class="mx-auto flex flex-col justify-between lg:flex-row lg:items-center 2xl:w-4/5">
+      <div class="order-2 box-border p-6 sm:mx-auto sm:w-4/5 lg:order-1 lg:w-2/5">
+        <div class="relative mx-auto grid grid-cols-2 gap-3 sm:gap-5">
+          <div class="grid gap-3">
+            <img src="src/images/home/why-lg-1.png" alt="" class="w-full object-cover" />
+            <img src="src/images/home/why-sm-1.png" alt="" class="w-full object-cover" />
+          </div>
+          <div class="grid gap-3">
+            <img src="src/images/home/why-lg-2.png" alt="" class="w-full object-cover" />
+            <img src="src/images/home/why-sm-2.png" alt="" class="w-full object-cover" />
+          </div>
+          <!-- Leaves -->
+          <img src="src/images/home/leaf-1.svg" alt=""
+            class="absolute -left-14 -top-16 -z-10 w-24 object-cover xs:-left-16 xs:-top-20 md:w-28" />
+          <img src="src/images/home/leaf-2.svg" alt=""
+            class="absolute -bottom-6 -right-32 -z-10 w-60 object-cover xs:-right-36 md:w-64" />
+        </div>
+      </div>
+
+      <article class="order-1 mx-auto sm:w-[580px] lg:order-2 lg:w-3/5">
+        <div class="mx-auto mb-8 space-y-3 lg:mb-0 lg:w-4/5">
+          <figure
+            class="flex flex-col rounded-xl rounded-br-[5rem] border-2 border-slate-200 bg-white p-5 shadow-md xs:flex-row lg:items-center lg:py-3 xl:py-6">
+            <div class="mr-4 w-24 xs:w-1/5 lg:w-[15%] xl:w-1/5">
+              <img src="src/images/icons/experience.svg" alt="" class="w-full object-cover" />
+            </div>
+            <figcaption class="xs:w-4/5 lg:w-[85%] xl:w-4/5">
+              <h4 class="mb-1 text-xl sm:text-2xl">Experience</h4>
+              <p
+                class="pr-5 leading-5 text-slate-400 xs:text-xs xs:leading-4 sm:text-base sm:leading-5 lg:text-sm lg:leading-4 xl:text-base xl:leading-5">
+                Help you expand your skills and knowledge in mental health
+                care by providing internship programs and working alongside
+                experienced professionals committed to providing the highest
+                level of care.
+              </p>
+            </figcaption>
+          </figure>
+          <figure
+            class="flex flex-col rounded-xl rounded-br-[5rem] border-2 border-slate-200 bg-slate-50 p-5 shadow-md xs:flex-row lg:items-center lg:py-3 xl:py-6">
+            <div class="mr-4 w-24 xs:w-1/5 lg:w-[15%] xl:w-1/5">
+              <img src="src/images/icons/experience.svg" alt="" class="w-full object-cover" />
+            </div>
+            <figcaption class="xs:w-4/5 lg:w-[85%] xl:w-4/5">
+              <h4 class="mb-1 text-xl sm:text-2xl">Experience</h4>
+              <p
+                class="pr-5 leading-5 text-slate-400 xs:text-xs xs:leading-4 sm:text-base sm:leading-5 lg:text-sm lg:leading-4 xl:text-base xl:leading-5">
+                Help you expand your skills and knowledge in mental health
+                care by providing internship programs and working alongside
+                experienced professionals committed to providing the highest
+                level of care.
+              </p>
+            </figcaption>
+          </figure>
+          <figure
+            class="flex flex-col rounded-xl rounded-br-[5rem] border-2 border-slate-200 bg-slate-50 p-5 shadow-md xs:flex-row lg:items-center lg:py-3 xl:py-6">
+            <div class="mr-4 w-24 xs:w-1/5 lg:w-[15%] xl:w-1/5">
+              <img src="src/images/icons/experience.svg" alt="" class="w-full object-cover" />
+            </div>
+            <figcaption class="xs:w-4/5 lg:w-[85%] xl:w-4/5">
+              <h4 class="mb-1 text-xl sm:text-2xl">Experience</h4>
+              <p
+                class="pr-5 leading-5 text-slate-400 xs:text-xs xs:leading-4 sm:text-base sm:leading-5 lg:text-sm lg:leading-4 xl:text-base xl:leading-5">
+                Help you expand your skills and knowledge in mental health
+                care by providing internship programs and working alongside
+                experienced professionals committed to providing the highest
+                level of care.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== Issues ========== -->
+  <section>
+    <div class="container mx-auto mb-8 px-6">
+      <h2 class="subheading">Facing Any Issue?</h2>
+      <p class="para">
+        Discover engaging mental health resources, including articles, videos,
+        self-assessments, and interactive tools, to support your journey
+        towards better mental health.
+      </p>
+    </div>
+
+    <!-- Issues -->
+    <div class="bg-primary-100/20 pb-20">
+      <div
+        class="container mx-auto grid gap-4 px-4 py-6 pt-8 sm:grid-cols-2 lg:grid-cols-3 lg:py-12 xl:gap-10 xl:py-16 2xl:gap-16">
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
+          <img src="src/images/issues/stress.png" alt="" class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+          <h4 class="text-center text-3xl font-semibold">Stress</h4>
+        </div>
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
+          <img src="src/images/issues/confusion.png" alt=""
+            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+          <h4 class="text-center text-3xl font-semibold">Confusion</h4>
+        </div>
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
+          <img src="src/images/issues/anxiety.png" alt=""
+            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+          <h4 class="text-center text-3xl font-semibold">Anxiety</h4>
+        </div>
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
+          <img src="src/images/issues/depression.png" alt=""
+            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+          <h4 class="text-center text-3xl font-semibold">Depression</h4>
+        </div>
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
+          <img src="src/images/issues/hyper-tension.png" alt=""
+            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+          <h4 class="text-center text-3xl font-semibold">Hypertension</h4>
+        </div>
+        <div class="rounded-2xl border-2 border-slate-200 py-4 lg:py-6">
+          <img src="src/images/issues/bio-polar-disorder.png" alt=""
+            class="mx-auto block h-60 w-60 object-cover lg:h-72 lg:w-72" />
+          <h4 class="text-center text-3xl font-semibold">
+            Biopolar Disorder
+          </h4>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn-lg">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Disorders ========== -->
+  <section class="container mx-auto px-4 py-20 2xl:py-28">
+    <div class="mb-12">
+      <h2 class="mx-auto mb-4 text-center font-poppins text-2xl font-bold sm:text-4xl md:text-5xl 2xl:w-4/5">
+        <span class="text-primary-300">Peacify</span> mental health experts
+        specialise in
+        <span class="text-primary-300">treating a variety</span> of conditions
+      </h2>
+    </div>
+
+    <div class="mx-auto flex flex-wrap justify-center gap-x-2 gap-y-3 lg:w-4/5 lg:gap-x-4">
+      <p class="btn-sm-light">Depression</p>
+      <p class="btn-sm-light">Personality Disorder</p>
+      <p class="btn-sm-light">Anxiety</p>
+      <p class="btn-sm-light">Addiction</p>
+      <p class="btn-sm-light">Grief</p>
+      <p class="btn-sm-light">POCD</p>
+      <p class="btn-sm-light">Adjustment Disorder</p>
+      <p class="btn-sm-light">Stress</p>
+      <p class="btn-sm-light">Trauma</p>
+      <p class="btn-sm-light">ADHD</p>
+      <p class="btn-sm-light">Eating Disorders</p>
+      <p class="btn-sm-light">OCD</p>
+      <p class="btn-sm-light">Sleep Concerns</p>
+      <p class="btn-sm-light border-2 border-slate-200 !bg-transparent">
+        See More
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== Objectives ========== -->
+  <div class="grid grid-cols-3 justify-center gap-y-6 bg-primary-100/20 py-6 sm:flex sm:gap-x-16 lg:gap-x-20 lg:py-10">
+    <div>
+      <img src="src/images/home/icon_safe.svg" alt=""
+        class="mx-auto mb-2 h-8 w-8 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16" />
+      <h4 class="text-center text-lg font-medium md:text-xl lg:text-2xl">
+        Safe
+      </h4>
+    </div>
+    <div>
+      <img src="src/images/home/icon_secure.svg" alt=""
+        class="mx-auto mb-2 h-8 w-8 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16" />
+      <h4 class="text-center text-lg font-medium md:text-xl lg:text-2xl">
+        Secure
+      </h4>
+    </div>
+    <div>
+      <img src="src/images/home/icon_effective.svg" alt=""
+        class="mx-auto mb-2 h-8 w-8 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16" />
+      <h4 class="text-center text-lg font-medium md:text-xl lg:text-2xl">
+        Effective
+      </h4>
+    </div>
+    <div>
+      <img src="src/images/home/icon_easy-access.svg" alt=""
+        class="mx-auto mb-2 h-8 w-8 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16" />
+      <h4 class="text-center text-lg font-medium md:text-xl lg:text-2xl">
+        Easy Access
+      </h4>
+    </div>
+    <div>
+      <img src="src/images/home/icon_community.svg" alt=""
+        class="mx-auto mb-2 h-8 w-8 object-cover sm:h-12 sm:w-12 lg:h-16 lg:w-16" />
+      <h4 class="text-center text-lg font-medium md:text-xl lg:text-2xl">
+        Community
+      </h4>
+    </div>
+  </div>
+
+  <!-- ========== Internship ========== -->
+  <section class="relative py-12">
+    <img src="src/images/home/internship.svg" alt="" class="mx-auto w-full object-cover lg:w-4/5 xl:w-3/5" />
+
+    <div
+      class="absolute left-1/2 top-1/2 w-3/5 -translate-x-1/2 -translate-y-1/2 text-center sm:w-[400px] md:w-[480px] 2xl:w-[500px]">
+      <h3
+        class="bg-gradient-to-r from-secondary via-tertiary to-primary-300 bg-clip-text font-poppins text-lg font-bold leading-5 text-transparent xs:text-2xl sm:text-3xl md:text-5xl 2xl:text-6xl">
+        Looking for an internship?
+      </h3>
+      <p class="mb-2 text-xs leading-4 xs:text-sm sm:text-base md:mb-4 md:text-lg lg:text-xl">
+        Upload your CV and make a positive impact on peoples life by joining
+        our internship program.
+      </p>
+      <button class="rounded-full bg-primary-500 px-4 py-1.5 text-sm text-white md:px-5 md:py-3">
+        Get Started
+      </button>
+    </div>
+
+    <!-- Doodles -->
+    <img src="src/images/home/doodle-1.svg" alt=""
+      class="absolute right-0 top-10 w-20 object-cover xs:w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80 2xl:w-[400px] 3xl:w-[520px]" />
+    <img src="src/images/home/doodle-2.svg" alt=""
+      class="absolute bottom-0 left-0 w-20 object-cover xs:w-32 sm:w-40 md:w-56 lg:w-72 xl:w-80 2xl:w-[400px] 3xl:w-[520px]" />
+  </section>
+
+  <!-- ========== Appointment ========== -->
+  <section class="py-10">
+    <div
+      class="mx-auto rounded-3xl bg-[#C6FFF899] px-2 py-12 xs:px-4 md:w-[720px] md:py-14 lg:w-[900px] lg:py-24 2xl:w-[1024px]">
+      <p class="text-center text-xs font-semibold text-slate-400 sm:text-lg lg:text-xl">
+        Need a doctor's counsealing?
+      </p>
+      <h4
+        class="mx-auto mb-4 text-center font-poppins text-xl font-semibold sm:mb-8 sm:px-8 sm:text-3xl md:w-[620px] lg:text-4xl">
+        Just make an appointment and motivated
+      </h4>
+
+      <div class="text-center">
+        <button class="btn-lg">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Our Testimonial ========== -->
+  <section class="bg-gradient-to-br from-primary-100/40 to-primary-100/5 py-10">
+    <div class="container mx-auto px-4 md:flex md:items-start md:gap-4 lg:py-10">
+      <div class="md:order-2 md:w-3/5">
+        <h2 class="subheading mb-6 text-center md:text-left">
+          Our Testimonials
+        </h2>
+        <figure
+          class="mb-6 flex items-start rounded-xl rounded-br-[6rem] bg-white p-4 shadow-lg sm:rounded-br-[7rem] sm:p-8 md:m-5 md:p-6 lg:w-[480px] 2xl:py-16 2xl:px-14">
+          <img src="src/images/home/testimonial-1.png" alt="" class="mr-4 w-14 object-cover sm:w-24" />
+          <figcaption>
+            <h4 class="text-lg font-semibold sm:text-xl">John Kuch</h4>
+            <h6 class="font-medium text-slate-400">Data Analyst, Google</h6>
+            <p class="mb-1 text-sm xs:pr-3 sm:text-lg md:text-base md:leading-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Incidunt laudantium mollitia id.
+            </p>
+            <ul class="flex space-x-2">
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="mx-auto w-4/5 md:order-1 md:w-2/5 md:flex md:justify-end">
+        <img src="src/images/home/testimonial.png" alt="Testimonials" class="w-full object-cover lg:w-96 lg:mr-10" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Statistics ========== -->
+  <section class="py-10 lg:py-12 sm:mb-10">
+    <div class="flex flex-wrap gap-5 justify-center">
+      <div class="bg-primary-400 flex flex-col p-4 md:p-8 rounded-2xl text-center">
+        <span class="text-3xl md:text-5xl font-bold">24/7</span>
+        <span class="block text-center">Online Support</span>
+      </div>
+      <div class="bg-primary-200 flex flex-col p-4 md:p-8 rounded-2xl text-center">
+        <span class="text-3xl md:text-5xl font-bold">100+</span>
+        <span class="block text-center">Doctors</span>
+      </div>
+      <div class="bg-primary-400 flex flex-col p-4 md:p-8 rounded-2xl text-center">
+        <span class="text-3xl md:text-5xl font-bold">1M+</span>
+        <span class="block text-center">Active Patients</span>
+      </div>
+      <div class="bg-primary-200 flex flex-col p-4 md:p-8 rounded-2xl text-center">
+        <span class="text-3xl md:text-5xl font-bold">5M+</span>
+        <span class="block text-center">Interested</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Clients ========== -->
+  <section class="lg:max-w-5xl lg:mx-auto xl:max-w-6xl 2xl:max-w-7xl">
+    <hgroup class="px-4 sm:mb-10">
+      <h2 class="subheading text-center mb-2">What Our Clients Says</h2>
+      <p class="leading-5 lg:w-4/5 text-slate-500 lg:mx-auto text-center sm:text-xl">
+        Hear from those who have used our mental health resources and support
+        by exploring this section.
+      </p>
+    </hgroup>
+
+    <!-- Reviews -->
+    <div class="relative">
+      <div
+        class="p-6 rounded-2xl border-2 border-slate-200 my-4 xs:w-[420px] md:w-[580px] xl:w-[720px] xl:p-12 2xl:w-[1024px] 2xl:p-14 mx-auto">
+        <div class="mb-4 md:flex md:justify-between md:items-center">
+          <!-- User -->
+          <div class="flex items-center">
+            <img src="src/images/home/client-1.png" alt="" class="w-16 object-cover mr-4 2xl:w-20" />
+            <div>
+              <h6 class="text-lg font-medium 2xl:text-xl">Floyd Miles</h6>
+              <span class="text-slate-500 font-medium">24, May 2023</span>
+            </div>
+          </div>
+
+          <!-- Rating -->
+          <div class="flex space-x-1">
+            <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.2966 2.24856C14.8813 0.377216 17.5298 0.377216 18.1145 2.24856L20.3811 9.50221C20.642 10.3372 21.4152 10.9057 22.29 10.9057H29.7859C31.7044 10.9057 32.5222 13.345 30.9915 14.5015L24.7945 19.1834C24.1207 19.6924 23.8393 20.5697 24.0911 21.3756L26.4261 28.8486C27.0062 30.7051 24.8634 32.2133 23.3115 31.0409L17.4112 26.5831C16.6978 26.0442 15.7133 26.0442 14.9999 26.5831L9.09957 31.0409C7.54769 32.2133 5.4049 30.7051 5.98498 28.8486L8.32002 21.3756C8.57186 20.5697 8.29039 19.6924 7.61665 19.1834L1.41961 14.5015C-0.111115 13.345 0.70675 10.9057 2.62522 10.9057H10.1211C10.9959 10.9057 11.7692 10.3372 12.0301 9.50221L14.2966 2.24856Z"
+                fill="#F5BF00" />
+            </svg>
+            <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.2966 2.24856C14.8813 0.377216 17.5298 0.377216 18.1145 2.24856L20.3811 9.50221C20.642 10.3372 21.4152 10.9057 22.29 10.9057H29.7859C31.7044 10.9057 32.5222 13.345 30.9915 14.5015L24.7945 19.1834C24.1207 19.6924 23.8393 20.5697 24.0911 21.3756L26.4261 28.8486C27.0062 30.7051 24.8634 32.2133 23.3115 31.0409L17.4112 26.5831C16.6978 26.0442 15.7133 26.0442 14.9999 26.5831L9.09957 31.0409C7.54769 32.2133 5.4049 30.7051 5.98498 28.8486L8.32002 21.3756C8.57186 20.5697 8.29039 19.6924 7.61665 19.1834L1.41961 14.5015C-0.111115 13.345 0.70675 10.9057 2.62522 10.9057H10.1211C10.9959 10.9057 11.7692 10.3372 12.0301 9.50221L14.2966 2.24856Z"
+                fill="#F5BF00" />
+            </svg>
+            <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.2966 2.24856C14.8813 0.377216 17.5298 0.377216 18.1145 2.24856L20.3811 9.50221C20.642 10.3372 21.4152 10.9057 22.29 10.9057H29.7859C31.7044 10.9057 32.5222 13.345 30.9915 14.5015L24.7945 19.1834C24.1207 19.6924 23.8393 20.5697 24.0911 21.3756L26.4261 28.8486C27.0062 30.7051 24.8634 32.2133 23.3115 31.0409L17.4112 26.5831C16.6978 26.0442 15.7133 26.0442 14.9999 26.5831L9.09957 31.0409C7.54769 32.2133 5.4049 30.7051 5.98498 28.8486L8.32002 21.3756C8.57186 20.5697 8.29039 19.6924 7.61665 19.1834L1.41961 14.5015C-0.111115 13.345 0.70675 10.9057 2.62522 10.9057H10.1211C10.9959 10.9057 11.7692 10.3372 12.0301 9.50221L14.2966 2.24856Z"
+                fill="#F5BF00" />
+            </svg>
+            <svg class="w-6 h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.2966 2.24856C14.8813 0.377216 17.5298 0.377216 18.1145 2.24856L20.3811 9.50221C20.642 10.3372 21.4152 10.9057 22.29 10.9057H29.7859C31.7044 10.9057 32.5222 13.345 30.9915 14.5015L24.7945 19.1834C24.1207 19.6924 23.8393 20.5697 24.0911 21.3756L26.4261 28.8486C27.0062 30.7051 24.8634 32.2133 23.3115 31.0409L17.4112 26.5831C16.6978 26.0442 15.7133 26.0442 14.9999 26.5831L9.09957 31.0409C7.54769 32.2133 5.4049 30.7051 5.98498 28.8486L8.32002 21.3756C8.57186 20.5697 8.29039 19.6924 7.61665 19.1834L1.41961 14.5015C-0.111115 13.345 0.70675 10.9057 2.62522 10.9057H10.1211C10.9959 10.9057 11.7692 10.3372 12.0301 9.50221L14.2966 2.24856Z"
+                fill="#F5BF00" />
+            </svg>
+          </div>
+        </div>
+        <p class="leading-5 text-slate-500 sm:text-lg 2xl:text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          dolore fugiat accusantium voluptatum. Qui, exercitationem voluptate
+          cumque quis tempora facere adipisci, ex, quas id est at! Incidunt,
+          odit? Error, sapiente.
+        </p>
+      </div>
+
+      <!-- Arrows -->
+      <div class="hidden sm:flex absolute top-1/2 -translate-y-1/2 w-full justify-between px-14">
+        <span>
+          <i class="fa-solid fa-circle-chevron-left text-4xl rounded-full"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-circle-chevron-right text-4xl rounded-full"></i>
+        </span>
+      </div>
+    </div>
+    <div class="flex space-x-2 justify-center">
+      <span class="h-3 w-3 rounded-full bg-slate-700 block"></span>
+      <span class="h-3 w-3 rounded-full bg-slate-700 block"></span>
+      <span class="h-3 w-3 rounded-full bg-slate-700 block"></span>
+    </div>
+  </section>
+
+  <!-- ========== Our Partners ========== -->
+  <section class="my-20 items-center">
+    <div class="flex flex-wrap gap-5 md:gap-8 lg:gap-12 justify-center xl:gap-12 2xl:gap-20">
+      <div>
+        <img src="src/images/home/partner-1.png" class="h-8 object-cover xl:h-10" alt="Partners" />
+      </div>
+      <div>
+        <img src="src/images/home/partner-2.png" class="h-8 object-cover xl:h-10" alt="Partners" />
+      </div>
+      <div>
+        <img src="src/images/home/partner-3.png" class="h-8 object-cover xl:h-10" alt="Partners" />
+      </div>
+      <div>
+        <img src="src/images/home/partner-4.png" class="h-8 object-cover xl:h-10" alt="Partners" />
+      </div>
+      <div>
+        <img src="src/images/home/partner-5.png" class="h-8 object-cover xl:h-10" alt="Partners" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Request Form ========== -->
+  <section class="px-4 xs:p-8 mb-8">
+    <div
+      class="py-12 px-6 xs:px-8 xs:py-14 grid md:grid-cols-2 max-w-6xl rounded-3xl mx-auto lg:px-8 md:divide-x bg-primary-200 lg:w-[980px] lg:py-16">
+      <div class="md:px-6 md:flex md:flex-col md:justify-between md:h-full">
+        <div>
+          <h3 class="font-medium opacity-80 text-[#464646] lg:text-lg">Need a doctor consulting?</h3>
+          <h1 class="text-4xl font-bold text-[#464646] opacity-90 xl:text-5xl">Request a Call Back Today Now</h1>
+          <p class="pt-2 pb-4 text-slate-700 opacity-90 lg:text-xl">Talk to your mental health professional.</p>
+        </div>
+        <div class="sm:flex items-center">
+          <img class="w-24 object-cover mb-2 sm:mr-6" src="src/images/icons/callback-users.png" alt="contact" />
+          <p class="text-slate-700 font-medium leading-5">
+            Our Doctors are waiting<br />for your service.
+          </p>
+        </div>
+      </div>
+
+      <form class="flex flex-col md:px-6 pt-10 md:pt-0">
+        <label class="mb-6">
+          <input type="text" placeholder="Enter Your Name"
+            class="px-6 block py-4 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-white" />
+        </label>
+        <label class="mb-6">
+          <input type="digit" placeholder="Your number "
+            class="px-6 block py-4 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-white" />
+        </label>
+        <label class="mb-6">
+          <input rows="3" type="date" placeholder="Date"
+            class="px-6 block py-4 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-white" />
+        </label>
+        <button type="button" class="btn-sm w-fit sm:py-3">Get Started</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="bg-primary-200 p-6 border-b-[1px] border-slate-100">
+    <div class="container mx-auto space-y-6 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4">
+      <div class="sm:p-4">
+        <p class="text-md leading-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis
+          voluptates culpa perspiciatis nesciunt laudantium! Fuga molestiae exercitationem in eius totam deserunt
+          possimus</p>
+        <div class="mt-4 space-x-2">
+          <a href="#"><i class="fa-brands fa-facebook text-2xl"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram text-2xl"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter text-2xl"></i></a>
+        </div>
+      </div>
+
+      <div class="sm:p-4">
+        <h4 class="text-3xl font-medium mb-2">Quick Links</h4>
+        <ul>
+          <li><a href="#" class="text-md text-slate-700">Home</a></li>
+          <li><a href="#" class="text-md text-slate-700">About</a></li>
+          <li><a href="#" class="text-md text-slate-700">Doctors</a></li>
+          <li><a href="#" class="text-md text-slate-700">Services</a></li>
+          <li><a href="#" class="text-md text-slate-700">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="sm:p-4">
+        <h4 class="text-3xl font-medium mb-2">Services</h4>
+        <ul>
+          <li><a href="#" class="text-md text-slate-700">Vaccination</a></li>
+          <li><a href="#" class="text-md text-slate-700">NDD</a></li>
+          <li><a href="#" class="text-md text-slate-700">Filled Prescription As Is</a></li>
+          <li><a href="#" class="text-md text-slate-700">Patient Referral</a></li>
+          <li><a href="#" class="text-md text-slate-700">Other Roofing</a></li>
+        </ul>
+      </div>
+
+      <div class="sm:p-4">
+        <h4 class="text-3xl font-medium mb-2">Location</h4>
+        <p class="text-md leading-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, hic.</p>
+      </div>
+    </div>
+  </footer>
+  <p class="text-center bg-primary-200 py-3">@2023 Peacify || All Rights Reserved</p>
+
+</body>
+
+</html>

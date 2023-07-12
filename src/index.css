@@ -67,7 +67,7 @@ button:focus-visible {
     background-image: url(./assets/IssueCards/background\ issue.png);
     background-repeat: no-repeat;
     margin-left: 8cm;
-    background-size: 1081px 237px;
+    background-size: 100% 237px;
 }
 
 /* about us background */
@@ -83,7 +83,7 @@ button:focus-visible {
     background-image: url(./assets/Internship/internbg.png);
     background-repeat: no-repeat;
     margin-left: 8cm;
-    background-size: 1081px 237px;
+    background-size: 100% 237px;
 }
 
 .why-us-card{

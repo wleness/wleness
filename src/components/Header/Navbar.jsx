@@ -33,14 +33,14 @@ const Navbar = () => {
     setShowDropdown(!showDropdown);
   }
   return (
-    <nav className="relative z-20 flex items-center justify-between px-6 py-3 md:py-6 lg:py-6">
+    <nav className="relative z-20 flex items-center justify-between px-2 py-3 md:py-4 max-w-screen">
       {/* <!-- Logo --> */}
       <div>
         <a href="/">
           <img
             src={logo}
             alt=""
-            className="w-28 object-cover lg:w-32 xl:w-36"
+            className="w-28 object-cover lg:w-24 xl:w-28"
           />
         </a>
       </div>
@@ -310,25 +310,20 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className="relative lg:hidden">
-        {/* <!-- Hamburger Icon --> */}
-        {/* <!-- Onclick => Hidden  --> */}
-        <button
-          className="right-5 top-5 sm:right-8 sm:top-8 md:top-10 md:right-10"
-          onClick={handleShow}
-        >
-          {!isShow && <FontAwesomeIcon icon={faBars} />}
-        </button>
+<div className="relative lg:hidden">
+  {/* Toggle Icon */}
+  <button
+    className="right-5 top-5 sm:right-8 sm:top-8 md:top-10 md:right-10"
+    onClick={handleShow}
+  >
+    {isShow ? (
+      <FontAwesomeIcon icon={faXmark} />
+    ) : (
+      <FontAwesomeIcon icon={faBars} />
+    )}
+  </button>
+</div>
 
-        {/* <!-- Onclick => Block  --> */}
-        {/* <!-- Close Icon --> */}
-        <button
-          onClick={handleHide}
-          className=" fixed right-5 top-5 sm:right-8 sm:top-8 md:top-10 md:right-10"
-        >
-          {isShow && <FontAwesomeIcon icon={faXmark} />}
-        </button>
-      </div>
     </nav>
   );
 };

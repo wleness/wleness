@@ -13,6 +13,7 @@ import Testinomialimg from "../components/Testinomialimg";
 import Appointment from "../components/Appointment";
 import SecureBanner from "../components/SecureBanner";
 // import Health from "../components/Health";
+import { Navbar } from "react-bootstrap";
 const Home = () => {
   return (
     <>

@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="md:grid w-auto md:grid-cols-2 bg-bghero dark:bg-bghero mx-0  md:mx-12 rounded-3xl min-h-[700px] px-5 py-10 md:pt-20 relative"
+      className="md:grid w-auto md:grid-cols-2 bg-bghero dark:bg-bghero mx-0  md:mx-12 rounded-3xl min-h-[700px] px-5 py-2 relative"
     >
       <div className="h-0 md:h-auto">
         <img
@@ -22,7 +22,7 @@ const Hero = () => {
         <p className="text-8xl font-bold leading-[122px] mb-3 text-transparent inline-block bg-gradient-to-r from-[#00F5A0] to-[#00D9F5] bg-clip-text">
           Peacify
         </p>
-        <p className="flex text-5xl w-[280px] sm:w-full">
+        <p className="flex text-3xl w-[280px] sm:w-full">
           Humans for human{" "} <img src={Heart} alt="Heart" className="j" />
           <span className="">
             

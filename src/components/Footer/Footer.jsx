@@ -3,8 +3,8 @@ import Contact from "./Contact";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-[#A2FFF5] text-black flex py-12 px-16 clear-right">
-      <div className="flex w-full flex-col sm:flex-row flex-wrap justify-between border-b pb-10 border-black">
+    <footer className="footer bg-[#A2FFF5] text-black py-12 px-16 clear-right">
+      <div className="flex w-full flex-col sm:flex-row flex-wrap justify-between border-b-2 pb-10 border-white">
         <div className="md:w-[25%] sm:w-[45%] w-[90%]">
           <p>
             Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh
@@ -74,7 +74,7 @@ const Footer = () => {
       <p className="text-base text-black text-center mt-8 ">
         {new Date().getFullYear()} © All rights reserved.
       </p>
-      \{" "}
+      {" "}
     </footer>
   );
 };

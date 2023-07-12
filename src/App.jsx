@@ -31,7 +31,7 @@ import MeditationTherapy5 from "./pages/meditationTherapy5";
 function App() {
   const isLoggedIn = window.localStorage.getItem("loggedIn");
   return (
-    <BrowserRouter basename="/gopeacify-frontend">
+    <BrowserRouter basename="/">
       <Navbar />
       <Routes>
       <Route path="/admin/*" element={<SidebarRouting />} />

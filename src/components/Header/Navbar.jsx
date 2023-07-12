@@ -36,13 +36,13 @@ const Navbar = () => {
     <nav className="relative z-20 flex items-center justify-between px-2 py-3 md:py-4 max-w-screen">
       {/* <!-- Logo --> */}
       <div>
-        <a href="/">
-          <img
+        <Link to="/" className="menu-link">
+        <img
             src={logo}
             alt=""
             className="w-28 object-cover lg:w-24 xl:w-28"
           />
-        </a>
+        </Link>
       </div>
 
       {/* Desktop Menu */}
@@ -88,12 +88,12 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link to="" className="menu-link">
+              <Link to="/alldoctor" className="menu-link">
                 Experts
               </Link>
             </li>
             <li className="group relative inline-block">
-              <Link to="" className="menu-link">
+              <Link to="/issues" className="menu-link">
                 Issues <FontAwesomeIcon icon={faAngleDown} />
               </Link>
 
@@ -127,7 +127,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link to="" className="menu-link">
+              <Link to="/internship" className="menu-link">
                 Internship
               </Link>
             </li>
@@ -139,7 +139,7 @@ const Navbar = () => {
               {/* <!-- Submenu --> */}
               <ul className="absolute hidden w-60 rounded-xl border-[1px] border-slate-100 z-10 bg-white px-6 py-4 shadow-md group-hover:block">
                 <li>
-                  <Link to="" className="menu-link inline-block py-2">
+                  <Link to="/yoga" className="menu-link inline-block py-2">
                     Yoga
                   </Link>
                 </li>
@@ -166,7 +166,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link to="" className="menu-link">
+              <Link to="/blog" className="menu-link">
                 Blogs
               </Link>
             </li>
@@ -226,7 +226,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="group relative inline-block">
-              <Link to="" className="menu-link">
+              <Link to="/issues" className="menu-link">
                 Issues <FontAwesomeIcon icon={faAngleDown} />
               </Link>
 
@@ -260,7 +260,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link to="" className="menu-link">
+              <Link to="/issues" className="menu-link">
                 Internship
               </Link>
             </li>

@@ -23,10 +23,19 @@
 .para{
     @apply lg:text-lg font-poppins text-slate-400
 }
+.admin-link-active{
+    @apply border-r-4 text-primary-300 border-primary-300 transition-all pr-3
+}
+.admin-link-hover{
+    @apply hover:border-r-4 hover:text-primary-300 hover:border-primary-300 transition-all hover:pr-3
+}
 
 /* Buttons */
 .btn-sm{
     @apply px-6 py-2 bg-primary-500 rounded-full text-white hover:bg-primary-300 transition-all
+}
+.btn-transparent{
+    @apply px-6 py-2 bg-transparent rounded-full hover:bg-primary-300 transition-all bg-primary-100
 }
 .btn-lg{
     @apply px-10 py-3 bg-primary-500 rounded-full text-white md:text-lg hover:bg-primary-300 transition-all
@@ -41,4 +50,9 @@
 }
 .issue-card{
     @apply mx-auto block h-60 w-60 object-cover
+}
+
+/* Form Styles */
+.form-input{
+    @apply w-full block outline-none border-2 border-slate-100 px-4 py-2 rounded-lg mb-3 text-sm md:py-2.5 md:text-base
 }

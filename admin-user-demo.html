@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peacify Landing Page</title>
+    <title>Admin Profile</title>
     <link rel="stylesheet" href="src/css/input.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -127,7 +127,34 @@
             </ul>
           </li>
           <li><a href="blogs.html" class="menu-link">Blogs</a></li>
-          <li><a href="admin-issue.html" class="menu-link">Admin</a></li>
+          <li class="group relative inline-block">
+            <a href="#" class="menu-link"
+              >Admin <i class="fa-solid fa-angle-down"></i
+            ></a>
+
+            <!-- Submenu -->
+            <ul
+              class="absolute hidden w-60 rounded-xl border-[1px] border-slate-100 bg-white px-6 py-4 shadow-md group-hover:block"
+            >
+              <li>
+                <a href="admin-profile.html" class="menu-link inline-block py-2"
+                  >Admin Profile</a
+                >
+              </li>
+              <li>
+                <a href="admin-issue.html" class="menu-link inline-block py-2"
+                  >Admin Issue</a
+                >
+              </li>
+              <li>
+                <a
+                  href="admin-issue-category.html"
+                  class="menu-link inline-block py-2"
+                  >Admin Issue Category</a
+                >
+              </li>
+            </ul>
+          </li>
         </ul>
 
         <!-- Authentication -->
@@ -140,13 +167,124 @@
       </div>
     </nav>
     <hr />
-    <!-- ========== Footer ========== -->
-    <footer class="bg-primary-100 p-6">
+
+    <section class="container text-center py-6">
+      <button class="btn-lg lg:mr-4" id="viewProfileBtn">View Profile</button>
+    </section>
+
+    <!-- Modals -->
+    <div
+      id="profileModal"
+      class="bg-black/40 h-full w-full flex justify-center"
+    >
       <div
-        class="container mx-auto space-y-6 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4"
+        class="bg-white p-4 rounded-xl mt-8 xs:w-4/5 md:w-3/4 xs:p-6 w-full lg:w-[720px] mx-4 h-full"
+      >
+        <div class="w-24 mb-2 md:w-32">
+          <img
+            src="src/images/admin/doctorProfile.jpg"
+            alt="object-cover block w-full"
+          />
+        </div>
+        <form action="javascript:void()" class="py-4">
+          <label for="name">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              class="form-input"
+            />
+          </label>
+          <label for="email">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="form-input"
+            />
+          </label>
+          <label for="languagesKnown">
+            <input
+              type="text"
+              name="languagesKnown"
+              id="languagesKnown"
+              placeholder="Languages Known"
+              class="form-input"
+            />
+          </label>
+          <div class="md:flex md:gap-3">
+            <label for="expertise" class="w-1/2">
+              <input
+                type="text"
+                name="expertise"
+                id="expertise"
+                placeholder="Expertise"
+                class="form-input"
+              />
+            </label>
+            <label for="experience" class="w-1/2">
+              <input
+                type="text"
+                name="experience"
+                id="experience"
+                placeholder="Experience"
+                class="form-input"
+              />
+            </label>
+          </div>
+          <div class="md:flex md:gap-3">
+            <label for="speciality" class="w-1/2">
+              <select name="speciality" id="speciality" class="form-input">
+                <option>Speciality</option>
+                <option value="First Option">First Option</option>
+                <option value="First Option">First Option</option>
+                <option value="First Option">First Option</option>
+                <option value="First Option">First Option</option>
+              </select>
+            </label>
+            <label for="field" class="w-1/2">
+              <select name="field" id="field" class="form-input">
+                <option>Field</option>
+                <option value="First Option">First Option</option>
+                <option value="First Option">First Option</option>
+                <option value="First Option">First Option</option>
+                <option value="First Option">First Option</option>
+              </select>
+            </label>
+          </div>
+          <textarea
+            name="bio"
+            id="bio"
+            cols="30"
+            rows="5"
+            placeholder="Tell Me About Yourself"
+            class="form-input"
+          ></textarea>
+          <textarea
+            name="bio"
+            id="bio"
+            cols="30"
+            rows="5"
+            placeholder="Why Do You Want To Choose Wleness?"
+            class="form-input !mb-5"
+          ></textarea>
+
+          <div class="text-center">
+            <button class="btn-sm !px-14 lg:mr-4">Approve</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ========== Footer ========== -->
+    <footer class="bg-primary-200 p-6 border-b-[1px] border-slate-100">
+      <div
+        class="container side-spacing mx-auto space-y-6 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4"
       >
         <div class="sm:p-4">
-          <p class="text-lg leading-6">
+          <p class="text-md leading-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Consectetur debitis voluptates culpa perspiciatis nesciunt
             laudantium! Fuga molestiae exercitationem in eius totam deserunt
@@ -163,36 +301,36 @@
         <div class="sm:p-4">
           <h4 class="text-3xl font-medium mb-2">Quick Links</h4>
           <ul>
-            <li><a href="#" class="text-lg text-slate-700">Home</a></li>
-            <li><a href="#" class="text-lg text-slate-700">About</a></li>
-            <li><a href="#" class="text-lg text-slate-700">Doctors</a></li>
-            <li><a href="#" class="text-lg text-slate-700">Services</a></li>
-            <li><a href="#" class="text-lg text-slate-700">Contact</a></li>
+            <li><a href="#" class="text-md text-slate-700">Home</a></li>
+            <li><a href="#" class="text-md text-slate-700">About</a></li>
+            <li><a href="#" class="text-md text-slate-700">Doctors</a></li>
+            <li><a href="#" class="text-md text-slate-700">Services</a></li>
+            <li><a href="#" class="text-md text-slate-700">Contact</a></li>
           </ul>
         </div>
 
         <div class="sm:p-4">
           <h4 class="text-3xl font-medium mb-2">Services</h4>
           <ul>
-            <li><a href="#" class="text-lg text-slate-700">Vaccination</a></li>
-            <li><a href="#" class="text-lg text-slate-700">NDD</a></li>
+            <li><a href="#" class="text-md text-slate-700">Vaccination</a></li>
+            <li><a href="#" class="text-md text-slate-700">NDD</a></li>
             <li>
-              <a href="#" class="text-lg text-slate-700"
+              <a href="#" class="text-md text-slate-700"
                 >Filled Prescription As Is</a
               >
             </li>
             <li>
-              <a href="#" class="text-lg text-slate-700">Patient Referral</a>
+              <a href="#" class="text-md text-slate-700">Patient Referral</a>
             </li>
             <li>
-              <a href="#" class="text-lg text-slate-700">Other Roofing</a>
+              <a href="#" class="text-md text-slate-700">Other Roofing</a>
             </li>
           </ul>
         </div>
 
         <div class="sm:p-4">
           <h4 class="text-3xl font-medium mb-2">Location</h4>
-          <p class="text-lg leading-6">
+          <p class="text-md leading-5">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
             hic.
           </p>
@@ -202,5 +340,14 @@
     <p class="text-center bg-primary-200 py-3">
       @2023 Peacify || All Rights Reserved
     </p>
+
+    <script>
+      let viewProfileBtn = document.getElementById("viewProfileBtn");
+      let profileModal = document.getElementById("profileModal");
+
+      viewProfileBtn.addEventListener("click", () => {
+        profileModal.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

@@ -11,6 +11,12 @@ export default {
         experts: resolve(__dirname, 'experts.html'),
         internship: resolve(__dirname, 'internship.html'),
         yoga: resolve(__dirname, 'yoga.html'),
+        // Admin Pages
+        adminIssues: resolve(__dirname, 'admin-issue.html'),
+        adminIssuesCategory: resolve(__dirname, 'admin-issue-category.html'),
+        adminUsers: resolve(__dirname, 'admin-users.html'),
+        adminQuestions: resolve(__dirname, 'admin-questions.html'),
+        adminBlogs: resolve(__dirname, 'admin-blogs.html'),
       }
     }
   }

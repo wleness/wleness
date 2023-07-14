@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Blogs</title>
+    <link rel="stylesheet" href="src/css/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- ========== Navigation Bar ========== -->
+    <nav
+      class="container mx-auto flex items-center justify-between px-4 py-3 md:py-6 lg:py-2"
+    >
+      <!-- Logo -->
+      <div>
+        <a href="/">
+          <img
+            src="src/images/logo.svg"
+            alt=""
+            class="w-24 object-cover lg:w-24 xl:w-28"
+          />
+        </a>
+      </div>
+
+      <div class="flex items-center">
+        <!-- Menu list -->
+        <ul class="mr-8 hidden justify-end space-x-6 xl:flex">
+          <li><a href="about.html" class="menu-link">About</a></li>
+          <li class="group relative inline-block">
+            <a href="services.html" class="menu-link"
+              >Services <i class="fa-solid fa-angle-down"></i
+            ></a>
+
+            <!-- Submenu -->
+            <ul
+              class="absolute hidden w-60 rounded-xl border-[1px] border-slate-100 bg-white px-6 py-4 shadow-md group-hover:block"
+            >
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Therapy</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Psychiatry</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2"
+                  >Couples Therapy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Self-Care</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Community</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="experts.html" class="menu-link">Experts</a></li>
+          <li class="group relative inline-block">
+            <a href="issues.html" class="menu-link"
+              >Issues <i class="fa-solid fa-angle-down"></i
+            ></a>
+
+            <!-- Submenu -->
+            <ul
+              class="absolute hidden w-60 rounded-xl border-[1px] border-slate-100 bg-white px-6 py-4 shadow-md group-hover:block"
+            >
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Depression</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Anxiety</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Adult ADHD</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Stress</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Feeling Low</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="internship.html" class="menu-link">Internship</a></li>
+          <li class="group relative inline-block">
+            <a href="#" class="menu-link"
+              >Exercises <i class="fa-solid fa-angle-down"></i
+            ></a>
+
+            <!-- Submenu -->
+            <ul
+              class="absolute hidden w-60 rounded-xl border-[1px] border-slate-100 bg-white px-6 py-4 shadow-md group-hover:block"
+            >
+              <li>
+                <a href="yoga.html" class="menu-link inline-block py-2">Yoga</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Meditation</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Goal Plan</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2">Sadhna</a>
+              </li>
+              <li>
+                <a href="#" class="menu-link inline-block py-2"
+                  >Brain Exercise</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="blogs.html" class="menu-link">Blogs</a></li>
+          <li class="group relative inline-block">
+            <a href="#" class="menu-link"
+              >Admin <i class="fa-solid fa-angle-down"></i
+            ></a>
+
+            <!-- Submenu -->
+            <ul
+              class="absolute hidden w-60 rounded-xl border-[1px] border-slate-100 bg-white px-6 py-4 shadow-md group-hover:block"
+            >
+              <li>
+                <a href="admin-profile.html" class="menu-link inline-block py-2"
+                  >Admin Profile</a
+                >
+              </li>
+              <li>
+                <a href="admin-issue.html" class="menu-link inline-block py-2"
+                  >Admin Issue</a
+                >
+              </li>
+              <li>
+                <a
+                  href="admin-issue-category.html"
+                  class="menu-link inline-block py-2"
+                  >Admin Issue Category</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Authentication -->
+        <button class="btn-lg hidden lg:mr-4 xl:inline-block">Sign Up</button>
+
+        <!-- Hamburger Icon -->
+        <button class="xl:hidden">
+          <i class="fa-solid fa-bars text-3xl"></i>
+        </button>
+      </div>
+    </nav>
+    <hr />
+
+    <section class="container grid justify-center py-12">
+      <h1 class="col-span-2 text-3xl font-semibold pb-8 ml-[200px]">
+        Admin Page
+      </h1>
+      <aside class="w-[200px] p-4 xl:p-6">
+        <ul>
+          <li>
+            <a
+              href="admin-doctors.html"
+              class="my-2 text-right block admin-link-active"
+              >Doctors</a
+            >
+          </li>
+          <li>
+            <a
+              href="admin-queries.html"
+              class="my-2 text-right block admin-link-hover"
+              >Queries</a
+            >
+          </li>
+          <li>
+            <a
+              href="admin-issue.html"
+              class="my-2 text-right block admin-link-hover"
+              >Issues</a
+            >
+          </li>
+          <li>
+            <a
+              href="admin-issue-category.html"
+              class="my-2 text-right block admin-link-hover"
+              >Issue Category</a
+            >
+          </li>
+          <li>
+            <a
+              href="admin-users.html"
+              class="my-2 text-right block admin-link-hover"
+              >Users</a
+            >
+          </li>
+          <li>
+            <a
+              href="admin-questions.html"
+              class="my-2 text-right block admin-link-hover"
+              >Questions</a
+            >
+          </li>
+          <li>
+            <a
+              href="admin-blogs.html"
+              class="my-2 text-right block admin-link-hover"
+              >Blogs</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <div class="w-[824px] xl:w-[1000px] p-6 bg-primary-100/30 rounded-lg">
+        <article class="mb-6">
+          <div class="flex justify-between mb-4">
+            <span class="text-sm text-slate-400">Today</span>
+            <a href="#" class="text-sm text-slate-400 hover:text-blue-600"
+              >View All</a
+            >
+          </div>
+
+          <div class="grid grid-cols-3 xl:grid-cols-4 gap-5">
+            <div
+              class="p-3 border-[1.4px] border-slate-200 rounded-lg bg-white flex justify-center items-center flex-col"
+            >
+              <h3 class="pb-2 text-center">Add Issue</h3>
+              <button
+                class="w-7 flex justify-center items-center h-7 rounded-full bg-primary-300/50 hover:bg-primary-300 transition-all addIssueBtn"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <figure
+              class="p-3 border-[1.4px] border-slate-200 rounded-lg bg-white"
+            >
+              <h3 class="pb-2 text-center">Issue Name</h3>
+              <div class="mb-2">
+                <img
+                  src="src/images/admin/issueCard.jpg"
+                  alt=""
+                  class="w-full block object-cover"
+                />
+              </div>
+              <figcaption>
+                <p class="leading-5 text-[15px] text-[#818181]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias inventore iure voluptate, quos tempora error. Nisi
+                  distinctio praesentium autem architecto?
+                </p>
+              </figcaption>
+            </figure>
+            <figure
+              class="p-3 border-[1.4px] border-slate-200 rounded-lg bg-white"
+            >
+              <h3 class="pb-2 text-center">Issue Name</h3>
+              <div class="mb-2">
+                <img
+                  src="src/images/admin/issueCard.jpg"
+                  alt=""
+                  class="w-full block object-cover"
+                />
+              </div>
+              <figcaption>
+                <p class="leading-5 text-[15px] text-[#818181]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias inventore iure voluptate, quos tempora error. Nisi
+                  distinctio praesentium autem architecto?
+                </p>
+              </figcaption>
+            </figure>
+            <figure
+              class="p-3 border-[1.4px] border-slate-200 rounded-lg bg-white"
+            >
+              <h3 class="pb-2 text-center">Issue Name</h3>
+              <div class="mb-2">
+                <img
+                  src="src/images/admin/issueCard.jpg"
+                  alt=""
+                  class="w-full block object-cover"
+                />
+              </div>
+              <figcaption>
+                <p class="leading-5 text-[15px] text-[#818181]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias inventore iure voluptate, quos tempora error. Nisi
+                  distinctio praesentium autem architecto?
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+        <article>
+          <div class="flex justify-between mb-4">
+            <span class="text-sm text-slate-400">2 May 2023</span>
+            <a href="#" class="text-sm text-slate-400 hover:text-blue-600"
+              >View All</a
+            >
+          </div>
+
+          <div class="grid grid-cols-3 xl:grid-cols-4 gap-5">
+            <figure
+              class="p-3 border-[1.4px] border-slate-200 rounded-lg bg-white"
+            >
+              <h3 class="pb-2 text-center">Issue Name</h3>
+              <div class="mb-2">
+                <img
+                  src="src/images/admin/issueCard.jpg"
+                  alt=""
+                  class="w-full block object-cover"
+                />
+              </div>
+              <figcaption>
+                <p class="leading-5 text-[15px] text-[#818181]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias inventore iure voluptate, quos tempora error. Nisi
+                  distinctio praesentium autem architecto?
+                </p>
+              </figcaption>
+            </figure>
+            <figure
+              class="p-3 border-[1.4px] border-slate-200 rounded-lg bg-white"
+            >
+              <h3 class="pb-2 text-center">Issue Name</h3>
+              <div class="mb-2">
+                <img
+                  src="src/images/admin/issueCard.jpg"
+                  alt=""
+                  class="w-full block object-cover"
+                />
+              </div>
+              <figcaption>
+                <p class="leading-5 text-[15px] text-[#818181]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias inventore iure voluptate, quos tempora error. Nisi
+                  distinctio praesentium autem architecto?
+                </p>
+              </figcaption>
+            </figure>
+            <figure
+              class="p-3 border-[1.4px] border-slate-200 rounded-lg bg-white"
+            >
+              <h3 class="pb-2 text-center">Issue Name</h3>
+              <div class="mb-2">
+                <img
+                  src="src/images/admin/issueCard.jpg"
+                  alt=""
+                  class="w-full block object-cover"
+                />
+              </div>
+              <figcaption>
+                <p class="leading-5 text-[15px] text-[#818181]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias inventore iure voluptate, quos tempora error. Nisi
+                  distinctio praesentium autem architecto?
+                </p>
+              </figcaption>
+            </figure>
+            <figure
+              class="p-3 border-[1.4px] border-slate-200 rounded-lg bg-white"
+            >
+              <h3 class="pb-2 text-center">Issue Name</h3>
+              <div class="mb-2">
+                <img
+                  src="src/images/admin/issueCard.jpg"
+                  alt=""
+                  class="w-full block object-cover"
+                />
+              </div>
+              <figcaption>
+                <p class="leading-5 text-[15px] text-[#818181]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias inventore iure voluptate, quos tempora error. Nisi
+                  distinctio praesentium autem architecto?
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div
+      id="addIssueModal"
+      class="bg-black/40 h-full w-full fixed inset-0 overflow-y-scroll hidden items-center justify-center"
+    >
+      <div>
+        <div
+          class="bg-white p-4 rounded-xl mt-8 xs:w-4/5 md:w-3/4 xs:p-6 w-full lg:w-[720px] mx-4 lg:mx-auto h-full"
+        >
+          <div class="mb-2">
+            <img
+              src="src/images/admin/addIssueImage.jpg"
+              alt="object-cover block w-full"
+            />
+          </div>
+          <form action="javascript:void()" class="py-4">
+            <label for="name">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Issue Name"
+                class="form-input"
+              />
+            </label>
+            <label for="title">
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="Title"
+                class="form-input"
+              />
+            </label>
+            <textarea
+              name="desc"
+              id="desc"
+              cols="30"
+              rows="5"
+              placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut odit quo cum impedit praesentium, enim iste saepe tempora blanditiis, atque deserunt? Atque, ex aliquid. Laborum eveniet est optio quia."
+              class="form-input"
+            ></textarea>
+
+            <div class="text-center">
+              <button class="btn-transparent !px-14 lg:mr-4 addIssueBtn">
+                Close
+              </button>
+              <button class="btn-sm !px-14 lg:mr-4">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Footer ========== -->
+    <footer class="bg-primary-200 p-6 border-b-[1px] border-slate-100">
+      <div
+        class="container side-spacing mx-auto space-y-6 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4"
+      >
+        <div class="sm:p-4">
+          <p class="text-md leading-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consectetur debitis voluptates culpa perspiciatis nesciunt
+            laudantium! Fuga molestiae exercitationem in eius totam deserunt
+            possimus
+          </p>
+          <div class="mt-4 space-x-2">
+            <a href="#"><i class="fa-brands fa-facebook text-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-2xl"></i></a>
+          </div>
+        </div>
+
+        <div class="sm:p-4">
+          <h4 class="text-3xl font-medium mb-2">Quick Links</h4>
+          <ul>
+            <li><a href="#" class="text-md text-slate-700">Home</a></li>
+            <li><a href="#" class="text-md text-slate-700">About</a></li>
+            <li><a href="#" class="text-md text-slate-700">Doctors</a></li>
+            <li><a href="#" class="text-md text-slate-700">Services</a></li>
+            <li><a href="#" class="text-md text-slate-700">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="sm:p-4">
+          <h4 class="text-3xl font-medium mb-2">Services</h4>
+          <ul>
+            <li><a href="#" class="text-md text-slate-700">Vaccination</a></li>
+            <li><a href="#" class="text-md text-slate-700">NDD</a></li>
+            <li>
+              <a href="#" class="text-md text-slate-700"
+                >Filled Prescription As Is</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-md text-slate-700">Patient Referral</a>
+            </li>
+            <li>
+              <a href="#" class="text-md text-slate-700">Other Roofing</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sm:p-4">
+          <h4 class="text-3xl font-medium mb-2">Location</h4>
+          <p class="text-md leading-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            hic.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <p class="text-center bg-primary-200 py-3">
+      @2023 Peacify || All Rights Reserved
+    </p>
+
+    <script>
+      let addIssueBtn = document.querySelectorAll(".addIssueBtn");
+      let addIssueModal = document.getElementById("addIssueModal");
+
+      addIssueBtn.forEach((key) => {
+        key.addEventListener("click", () => {
+          addIssueModal.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
